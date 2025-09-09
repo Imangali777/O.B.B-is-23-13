@@ -1,0 +1,19 @@
+import numpy as np
+
+a = np.array([1.5, 2.3, 4.7, 3.1, 5.0, 6.2, 0.4, 3.6, 7.8, 2.9])  
+mean_a = np.mean(a)  
+
+if mean_a in a:
+    print(f"Элемент {mean_a} найден в массиве.")
+else:
+    print(f"Элемент {mean_a} не найден в массиве.")
+
+A = np.array([[1, 2, 3, 4],
+              [5, 6, 7, 8],
+              [9, 10, 11, 12],
+              [13, 14, 15, 16]])  
+
+main_diag = np.diag(A)  
+max_diag_value = np.max(main_diag)  
+
+print(f"Наибольший элемент на главной диагонали: {max_diag_value}")
